@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hinojo Enmascarado</title>
+  <title>[ A B R A X A S A ]</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&family=Fira+Code:wght@400&family=Source+Code+Pro:wght@400&family=IBM+Plex+Mono:wght@400&family=Space+Mono:wght@400&family=PT+Mono&family=Inconsolata:wght@400&family=Share+Tech+Mono&family=Orbitron:wght@400&family=Audiowide&family=Chakra+Petch:wght@400&family=Exo+2:wght@400&family=Doto&family=Workbench&family=Jacquard+12&family=Turret+Road&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
@@ -12,38 +15,93 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      gap: 2rem;
       background: linear-gradient(135deg, #FF9CCF, #D46BA3);
       font-family: 'Arial', sans-serif;
       color: #fff;
       text-align: center;
     }
 
-    h1 {
+    /* h1 {
       font-size: 1.2rem;
       letter-spacing: 0.3em;
       font-weight: 400;
       margin-bottom: 2rem;
+    } */
+
+    .text {
+      font-size: 2.0rem;
+      letter-spacing: 0.2em;
+      /* font-weight: 400; */
+      font-family: 'Doto', monospace !important;
     }
+
+    .jetbrains { font-family: 'JetBrains Mono', monospace; }
+    .fira-code { font-family: 'Fira Code', monospace; }
+    .source-code { font-family: 'Source Code Pro', monospace; }
+    .ibm-plex { font-family: 'IBM Plex Mono', monospace; }
+    .space-mono { font-family: 'Space Mono', monospace; }
+    .pt-mono { font-family: 'PT Mono', monospace; }
+    .inconsolata { font-family: 'Inconsolata', monospace; }
+    .share-tech { font-family: 'Share Tech Mono', monospace; }
+    .orbitron { font-family: 'Orbitron', monospace; }
+    .audiowide { font-family: 'Audiowide', monospace; }
+    .chakra-petch { font-family: 'Chakra Petch', monospace; }
+    .exo-2 { font-family: 'Exo 2', monospace; }
+    .doto { font-family: 'Doto', monospace; }
+    .workbench { font-family: 'Workbench', monospace; }
+    .jacquard-12 { font-family: 'Jacquard 12', monospace; }
+    .turret-road { font-family: 'Turret Road', monospace; }
 
     .circle {
       width: 300px;
       height: 300px;
       border-radius: 50%;
-      background: radial-gradient(circle at 30% 30%, #FF8AD9, #D46BA3, #FF5B9E);
-      box-shadow: 0 0 60px rgba(255, 138, 217, 0.5);
-      margin-bottom: 2rem;
+      background: radial-gradient(circle at 30% 30%, #8B0000, #4B0000, #2F0000);
+      box-shadow: 
+        0 0 80px rgba(139, 0, 0, 0.8),
+        0 0 40px rgba(75, 0, 0, 0.6),
+        inset 0 0 50px rgba(139, 0, 0, 0.3);
+      position: relative;
     }
 
-    h2 {
+    .circle::before {
+      content: '';
+      position: absolute;
+      top: 20%;
+      left: 25%;
+      width: 15%;
+      height: 15%;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(139, 0, 0, 0.4), transparent);
+      box-shadow: 0 0 20px rgba(139, 0, 0, 0.6);
+    }
+
+    .circle::after {
+      content: '';
+      position: absolute;
+      top: 60%;
+      right: 20%;
+      width: 8%;
+      height: 8%;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(75, 0, 0, 0.5), transparent);
+      box-shadow: 0 0 15px rgba(75, 0, 0, 0.4);
+    }
+
+    /* h2 {
       font-size: 1.5rem;
       letter-spacing: 0.2em;
       font-weight: 400;
-    }
+    } */
   </style>
 </head>
 <body>
-  <h1>abraxasa</h1>
+  <div class="text">// abraxasa //</div>
   <div class="circle"></div>
-  <h2>exquisite infinity</h2>
+  <div class="text jetbrains">exquisite infinity</div>
+  <div class="text space-mono">moonlight vendetta</div>
+  <div class="text fira-code">child of blood</div>
+  <div class="text ibm-plex">serpent queen</div>
 </body>
 </html>
