@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <radialGradient id="crescentGradient" cx="70%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#CC0000"/>
+      <stop offset="50%" stop-color="#990000"/>
+      <stop offset="100%" stop-color="#660000"/>
+    </radialGradient>
+    <radialGradient id="highlight1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(204, 0, 0, 0.6)"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <radialGradient id="highlight2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(153, 0, 0, 0.7)"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Crescent shape using path -->
+  <path d="M16 4 A12 12 0 0 1 16 28 A12 12 0 0 1 16 4 M12 8 A8 8 0 0 0 12 24 A8 8 0 0 0 12 8 Z" 
+        fill="url(#crescentGradient)" 
+        filter="url(#glow)"/>
+  
+  <!-- Highlight 1 (on the crescent) -->
+  <circle cx="14" cy="12" r="1.5" fill="url(#highlight1)"/>
+  
+  <!-- Highlight 2 (on the crescent) -->
+  <circle cx="12" cy="20" r="1" fill="url(#highlight2)"/>
+</svg>
