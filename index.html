@@ -94,14 +94,43 @@
       letter-spacing: 0.2em;
       font-weight: 400;
     } */
+
+    .song-titles {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+
+    .roman-column {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    .title-column {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
   </style>
 </head>
 <body>
   <div class="text">// abraxasa //</div>
   <div class="circle"></div>
-  <div class="text jetbrains">exquisite pleasure</div>
-  <div class="text space-mono">moonlight vendetta</div>
-  <div class="text fira-code">infinite light</div>
-  <div class="text ibm-plex">serpentine hunt</div>
+  <div class="song-titles">
+    <div class="roman-column">
+      <div class="text">i</div>
+      <div class="text">ii</div>
+      <div class="text">iii</div>
+      <div class="text">iv</div>
+    </div>
+    <div class="title-column">
+      <div class="text">// exquisite pleasure</div>
+      <div class="text">// moonlight vendetta</div>
+      <div class="text">// infinite light</div>
+      <div class="text">// serpentine hunt</div>
+    </div>
+  </div>
 </body>
 </html>
